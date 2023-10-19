@@ -1,0 +1,12 @@
+{
+  "java.project.sourcePaths": [
+    "01_Salida_de_datos_por_pantalla/ejemplos",
+    "01_Salida_de_datos_por_pantalla",
+    "01_Salida_de_datos_por_pantalla/ejemplos",
+    "01_Salida_de_datos_por_pantalla/ejercicios",
+    "01_Salida_de_datos_por_pantalla/ejemplos/SalidaFormateada01",
+    "01_Salida_de_datos_por_pantalla/ejemplos/Colors"
+  ],
+  "java.dependency.syncWithFolderExplorer": true,
+  "java.dependency.packagePresentation": "hierarchical"
+}
