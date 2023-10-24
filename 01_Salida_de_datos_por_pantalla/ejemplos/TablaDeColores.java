@@ -5,7 +5,7 @@
  * @author Pablo Ruiz
  */
 
-import Colors.ConsoleColors;
+import colors.ConsoleColors;
 public class TablaDeColores {
   public static void main(String[] args) {
     System.out.println("┌────────┬───────────┬────────┬────────────────┐");
