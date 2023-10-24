@@ -5,7 +5,7 @@
 * @author Pablo Ruiz
 */
 
-public class Ejercicio2 {
+public class T01Ejercicio02 {
   public static void main(String[] args) {
     System.out.println("Mi nombre es Pablo Ruiz");
     System.out.println("Mi dirección es __________");

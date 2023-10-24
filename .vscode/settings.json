@@ -2,6 +2,9 @@
   "java.project.sourcePaths": [
     "01_Salida_de_datos_por_pantalla\\ejemplos",
     "01_Salida_de_datos_por_pantalla\\ejercicios",
+    "02_Variables",
+    "02_Variables\\ejercicios",
+    "02_Variables\\ejemplos",
     "03"
   ],
   "java.dependency.syncWithFolderExplorer": true

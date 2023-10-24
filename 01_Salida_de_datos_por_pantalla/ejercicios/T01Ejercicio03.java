@@ -7,7 +7,7 @@
 * @author Pablo Ruiz
 */
 
-public class Ejercicio3 {
+public class T01Ejercicio03 {
   public static void main(String[] args) {
     System.out.printf("%-10s   %s", "computer", "ordenador \n");
     System.out.printf("%-10s   %s", "student", "alumno/a \n");
