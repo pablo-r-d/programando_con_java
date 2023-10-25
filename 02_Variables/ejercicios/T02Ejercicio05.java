@@ -7,8 +7,8 @@
 public class T02Ejercicio05 {
   public static void main(String[] args) {
     double pesetas = 6000.00;
-    int euros = ((int) Math.round(pesetas / 166.386));
+    double euros = (pesetas / 166.386);
+    System.out.printf("%.2f € \n", euros);
     System.out.println(euros);
-    System.out.println(pesetas / 166.386);
   }
 }
