@@ -13,6 +13,6 @@ public class T02Ejercicio01 {
     System.out.println(x+y);
     System.out.println(x-y);
     System.out.println(x*y);
-    System.out.println(x/y);
+    System.out.println((float)x / (float)y);
   }
 }
