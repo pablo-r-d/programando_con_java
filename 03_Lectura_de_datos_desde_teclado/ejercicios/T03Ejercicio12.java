@@ -11,12 +11,12 @@ public class T03Ejercicio12 {
     Scanner sc = new Scanner(System.in);
     
     System.out.println("Introduce la nota del primer examen");
-    float nota1 = sc.nextFloat();
+    double nota1 = sc.nextDouble();
 
     System.out.println("¿Qué nota media quieres sacar en el trimestre?");
-    float media = sc.nextFloat();
+    double media = sc.nextDouble();
 
-    float nota2 = (2*media) - nota1;
+    double nota2 = (media - (0.4*nota1))/0.6;
 
     System.out.printf("Para tener un " + media + " en el trimestre necesitas %.2f en el segundo examen", nota2);
 
