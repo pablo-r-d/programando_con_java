@@ -14,24 +14,20 @@ public class T04Ejercicio01 {
     String dia = sc.next();
 
     switch (dia) {
-      case ("Lunes"): // no funciona con || ni con dia.equalsIgnoreCase("lunes")
+      case "Lunes", "lunes":
         System.out.println("FOL");
         break;
       
-      case "Martes":
+      case "Martes", "martes", "Viernes", "viernes":
         System.out.println("Programación");
         break;
 
-      case "Miércoles":
+      case "Miércoles", "miércoles", "Miercoles", "miercoles":
         System.out.println("Entornos de desarrollo");
         break;
       
-      case "Jueves":
+      case "Jueves", "jueves":
         System.out.println("Bases de datos");
-        break;
-    
-      case "Viernes":
-        System.out.println("Programación");
         break;
 
       case "sabado":
