@@ -1,14 +1,16 @@
 {
   "java.project.sourcePaths": [
-    "04_Sentencia_Condicional/ejemplos",
-    "03_Lectura_de_datos_desde_teclado/ejercicios",
-    "03_Lectura_de_datos_desde_teclado/ejemplos",
-    "02_Variables/ejercicios",
-    "02_Variables/ejemplos",
+    ".",
+    "01_Salida_de_datos_por_pantalla\\ejemplos",
+    "01_Salida_de_datos_por_pantalla\\ejercicios",
     "02_Variables",
-    "01_Salida_de_datos_por_pantalla/ejercicios",
-    "01_Salida_de_datos_por_pantalla/ejemplos",
-    "04_Sentencia_Condicional/ejercicios"
+    "02_Variables\\ejemplos",
+    "02_Variables\\ejercicios",
+    "03_Lectura_de_datos_desde_teclado\\ejemplos",
+    "03_Lectura_de_datos_desde_teclado\\ejercicios",
+    "04_Sentencia_Condicional\\ejemplos",
+    "04_Sentencia_Condicional\\ejercicios",
+    "03_Lectura_de_datos_desde_teclado\\examen2"
   ],
   "java.dependency.syncWithFolderExplorer": true
 }

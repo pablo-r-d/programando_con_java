@@ -15,7 +15,7 @@ public class SalidaFormateada01 {
     System.out.printf("El número %d no tiene decimales.\n", 21); // %d indica entero
     System.out.printf("El número %f sale con decimales.\n", 21.0); // %f indica decimal (float)
     System.out.printf("El número %.3f sale exactamente con %d con decimales.\n", 50.0, 3);
-    System.out.printf("Letraaaaaa: %c.\n", 83 ); // %c indica código ASCII
+    System.out.printf("Letra: %c.\n", 83 ); // %c indica código ASCII
 
     // Para ver el ORDEN
     System.out.printf("Mostramos el segundo argumento: %2$d \n Y después el primero %1$.2f", 23.0, 56);

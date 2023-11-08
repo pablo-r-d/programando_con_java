@@ -13,10 +13,8 @@ public class T04Ejercicio01 {
     System.out.println("Introduce un día de la semana para ver qué asignatura toca ese día a primera hora: ");
     String dia = sc.next();
 
-    String lunes = "lunes";
-
     switch (dia) {
-      case "lunes" : // no funciona con || ni con dia.equalsIgnoreCase("lunes")
+      case ("Lunes"): // no funciona con || ni con dia.equalsIgnoreCase("lunes")
         System.out.println("FOL");
         break;
       
