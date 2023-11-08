@@ -16,7 +16,7 @@ public class T04Ejercicio04 {
 
     int horasExtra = horas - 40;
     int sueldo;
-
+  
     if (horasExtra > 0) {
       sueldo = (horas - horasExtra) * 12 + horasExtra * 16;
     } else {
