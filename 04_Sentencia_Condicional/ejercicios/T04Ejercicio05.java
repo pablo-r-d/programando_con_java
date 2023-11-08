@@ -15,12 +15,10 @@ public class T04Ejercicio05 {
     System.out.print("Ahora introduzca el valor de b: ");
     double b = sc.nextDouble();
 
-    double x = (-1.0)*b/a;
-
     if (a == 0) {
       System.out.println("Esa ecuación no tiene solución real.");
     } else {
-      System.out.println("x = " + x);  
+      System.out.println("x = " + (-b/a));  
     }
     
     
