@@ -19,13 +19,17 @@ public class T04Ejercicio04 {
   
     if (horasExtra > 0) {
       sueldo = (horas - horasExtra) * 12 + horasExtra * 16;
-    } else {
+      System.out.println("Tu sueldo semanal es: " + sueldo + " €");
+    } else if (horas > 0) {
       sueldo = horas * 12;
+      System.out.println("Tu sueldo semanal es: " + sueldo + " €");
+    } else {
+      System.out.println("No has introducido un número válido.");
     }
 
 
 
-    System.out.println("Tu sueldo semanal es: " + sueldo + "€");
+    
 
     sc.close();
   }
