@@ -30,12 +30,12 @@ public class T04Ejercicio01 {
         System.out.println("Bases de datos");
         break;
 
-      case "sabado":
+      case "sabado", "Sabado", "sábado", "Sábado":
         //System.out.println("¡El fin de semana no hay clases!");
        // break;
        // al no haber código aquí ejecuta el código de la siguiente opción
 
-      case "Domingo":
+      case "Domingo", "domingo":
         System.out.println("¡El fin de semana no hay clases!");
         break;
 
