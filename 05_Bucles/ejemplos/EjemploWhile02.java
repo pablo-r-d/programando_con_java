@@ -13,24 +13,30 @@ public class EjemploWhile02 {
     String answer = "s";
     int i = 0;
     int j = 0;
+    int suma = 0; // Acumula los números positivos introducidos
+    int sumaNeg = 0;
 
     System.out.println("Introduce un número por teclado");
 
     while (answer.equals("s")) {
+
+      System.out.print("Número: ");
       int num = sc.nextInt();
       
       if (num > 0) {
+        suma += num; // Suma num a su valor anterior
         i++;
       } else if (num < 0) {
-          j++;
+        sumaNeg += num; 
+        j++;
       }
      
       System.out.println("¿Quieres introducir otro número?(s/n)");
       answer = sc.next().toLowerCase();
     }
 
-    System.out.println("Ha introducido un total de  " + i + " números positivos.");
-    System.out.println("Ha introducido un total de  " + j + " números negativos.");
+    System.out.println("Ha introducido un total de  " + i + " números positivos. La suma de todos ellos da: " + suma);
+    System.out.println("Ha introducido un total de  " + j + " números negativos. La suma de todos ellos da: " + sumaNeg);
 
     sc.close();
   }
