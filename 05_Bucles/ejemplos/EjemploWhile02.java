@@ -14,11 +14,11 @@ public class EjemploWhile02 {
     int i = 0;
     int j = 0;
     int suma = 0; // Acumula los números positivos introducidos
-    int sumaNeg = 0;
+    int sumaNeg = 0; // Acumula los números negativos introducidos
 
     System.out.println("Introduce un número por teclado");
 
-    while (answer.equals("s")) {
+    while (!answer.equals("n")) { // ! al principio niega la igualdad. Es el equivalente a !=
 
       System.out.print("Número: ");
       int num = sc.nextInt();
