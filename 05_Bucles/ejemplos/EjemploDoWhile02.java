@@ -3,7 +3,6 @@
  * 
 * @author Pablo Ruiz
 */
-import java.util.Scanner;
 public class EjemploDoWhile02 {
 
   public static void main(String[] args) {
