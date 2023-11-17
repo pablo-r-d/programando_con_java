@@ -13,12 +13,10 @@ public class T05_Ejercicio_09 {
     int digitos = 0;
     long numero = num;
     while (num > 0) {
-      num = num/10;
+      num /= 10;
       digitos ++;
     }
 
-    System.out.println("El número " + numero + " tiene " + digitos + " dígitos.");
-
+    System.out.println("El número " + numero + " tiene " + digitos + " dígito(s).");
   }
-
 }

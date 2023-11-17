@@ -3,5 +3,6 @@
     ".",
     "ejemplos",
     "ejercicios"
-  ]
+  ],
+  "java.format.settings.url": "eclipse-formatter.xml"
 }
