@@ -1,0 +1,123 @@
+{
+	// Place your programando_con_java workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+
+		// Autor:
+	"Comentario Autor": {
+		"prefix": "autor",
+		"body": [
+			"/** ",
+			" * Explica tu código aquí",
+			" * ",
+			"* @author Pablo Ruiz",
+			"*/",
+			"public class ${1:${TM_FILENAME_BASE}} {",
+			"",
+			"	public static void main(String[] args) {",
+			"",
+			"		",
+			"",
+			"	}",
+			"",
+			"}"
+		],
+		"description": "Escribe comentario autor, class y main"
+	}
+	
+	// System.out.printf
+	"Texto formateado": {
+		"prefix": "sysf",
+		"body": [
+			"System.out.printf();"
+		],
+		"description": "Escribe lo de texto formateado"
+	}
+	
+	// Importar Scanner 
+	"Importar Scanner": {
+		"prefix": "importsc",
+		"body": [
+			"import java.util.Scanner;"
+		],
+		"description": "importa Scanner"
+	}
+
+	// Scanner sc = new Scanner(System.in);
+	"Abrir Scanner": {
+		"prefix": "sco",
+		"body": [
+			"Scanner sc = new Scanner(System.in, \"Windows-1252\");"
+		],
+		"description": "Crea un nuevo objeto scanner"
+	}
+
+	// type var = sc.nextType();
+	"Scan variable": {
+		"prefix": "scn",
+		"body": [
+			"type var = sc.nextType();"
+		],
+		"description": "Lee una variable que introduzcamos. Hay que cambiar type y nombre de la variable"
+	}
+
+	// sc.close();
+	"Cerrar Scanner": {
+		"prefix": "scc",
+		"body": [
+			"sc.close();"
+		],
+		"description": "Cierra scanner"
+	}
+
+	// Integer.parseInt(myString);
+	"String a Entero": {
+		"prefix": "Stringint",
+		"body": [
+			"Integer.parseInt(myString);"
+		],
+		"description": "convierte String a int. Hay que cambiar myString por el nombre de la variable que corresponda"
+	}
+
+	// Float.parseFloat(myString);
+	"String a Float": {
+		"prefix": "Stringfloat",
+		"body": [
+			"Float.parseFloat(myString);"
+		],
+		"description": "convierte String a float. Hay que cambiar myString por el nombre de la variable que corresponda"
+	}
+
+	// Integer.toString(number);
+	"int a String": {
+		"prefix": "intString",
+		"body": [
+			"Integer.toString(number)"
+		],
+		"description": "Convierte int a String. Hay que cambiar number por el nombre de la variable que corresponda"
+
+		// Float.toString(number);
+	"float a String": {
+		"prefix": "floatString",
+		"body": [
+			"Float.toString(number)"
+		],
+		"description": "Convierte float a String. Hay que cambiar number por el nombre de la variable que corresponda"
+	}
+
+}
+
