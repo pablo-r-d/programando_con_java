@@ -8,19 +8,28 @@ public class Ejercicio_Histogramas {
     public static void main(String[] args) {
   
         int num = 1;
-        double num1 = 0;
+        int num1 = 0;
         int i = 0;
         int columnas=1;
+        int cero = 0;
 
         System.out.println("Introduzca un número entre 0 y 9 y pulse INTRO. Introduzca un número negativo si desea parar.");
 
         while (num >= 0) {
             num = Integer.parseInt(System.console().readLine());
             if (num>=0) {
-                num1 = num1 + (num * Math.pow(10, i));
+                if (num == 0 ){
+                    num=10;
+                }
+                num1 = num1 + ((num+cero) * (int)Math.pow(10, i));
                 i++;
                 System.out.println(num1);
-                // System.out.println(i); 
+                // System.out.println(i);
+                if (num == 10) {
+                    cero = -1;
+                } else {
+                    cero = 0;
+                }
             }
             
             if (num > columnas) {
