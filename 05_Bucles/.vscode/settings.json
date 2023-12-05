@@ -2,7 +2,9 @@
   "java.project.sourcePaths": [
     ".",
     "ejemplos",
-    "ejercicios"
+    "ejercicios",
+    "Bloque_try_catch_finally",
+    "ejercicio_histograma"
   ],
   "java.format.settings.url": "eclipse-formatter.xml"
 }

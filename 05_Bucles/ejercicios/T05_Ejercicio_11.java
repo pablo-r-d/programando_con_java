@@ -18,6 +18,7 @@ public class T05_Ejercicio_11 {
     for (;i < (num+5); i++) {
       //System.out.println(i + "  |  " + Math.pow(i, 2)+ "  |  " + Math.pow(i, 3));
       System.out.printf("%5d  |  %7.1f  |  %9.1f \n", i, Math.pow(i, 2), Math.pow(i, 3));
+      
     }
 
   }
