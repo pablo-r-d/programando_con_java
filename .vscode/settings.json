@@ -10,7 +10,10 @@
     "03_Lectura_de_datos_desde_teclado\\ejercicios",
     "04_Sentencia_Condicional\\ejemplos",
     "04_Sentencia_Condicional\\ejercicios",
-    "03_Lectura_de_datos_desde_teclado\\examen2"
+    "03_Lectura_de_datos_desde_teclado\\examen2",
+    "06_Arrays",
+    "06_Arrays\\ejemplos",
+    "06_Arrays\\ejercicios"
   ],
   "java.dependency.syncWithFolderExplorer": true
 }
