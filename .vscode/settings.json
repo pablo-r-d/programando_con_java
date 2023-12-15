@@ -13,7 +13,11 @@
     "03_Lectura_de_datos_desde_teclado\\examen2",
     "06_Arrays",
     "06_Arrays\\ejemplos",
-    "06_Arrays\\ejercicios"
+    "06_Arrays\\ejercicios",
+    "08_Funciones",
+    "08_Funciones\\ejemplos",
+    "08_Funciones\\ejercicios",
+    "examen"
   ],
   "java.dependency.syncWithFolderExplorer": true
 }

@@ -46,4 +46,99 @@ public class Varias {
       return n;
     }
   }
+
+  /**
+   * Calcula la media de varios números introducidos por teclado.
+   * 
+   * @param num
+   * @return double
+   */
+  public static double media() {
+    String repetir = "s";
+    double media;
+    double suma = 0;
+    int i = 0;
+    double num;
+
+    System.out.println("¿Sabes cuántos números vas a introducir?(s/n)");
+    String sabe = System.console().readLine().toLowerCase();
+
+    if (sabe.equals("s")) {
+      System.out.println("¿Cuántos números quieres introducir?");
+      i = Integer.parseInt(System.console().readLine());
+      for (int j = 0; j < i; j++) {
+        System.out.print("Introduce un número: ");
+        num = Double.parseDouble(System.console().readLine());
+
+        suma += num;
+      }
+    } else {
+      while (repetir.equals("s")) {
+
+        System.out.print("Introduce un número: ");
+        num = Double.parseDouble(System.console().readLine());
+
+        suma += num;
+        i++;
+
+        System.out.println("¿Quieres introducir otro número?)(s/n)");
+        repetir = System.console().readLine().toLowerCase();
+      }
+    }
+
+    media = suma / i;
+    return media;
+  }
+
+  /**
+   * Voltea un número introducido por teclado.
+   * 
+   * @param num
+   * @return long
+   */
+  public static long voltear(long num) {
+
+    long numeroVolteado = 0;
+    System.out.println("Esta es la función que devuelve un long.");
+
+    if (num < 0) {
+      return -voltear(-num); // No hace falta multiplicar por -1, con poner - funciona.
+    }
+
+    while (num > 0) {
+      numeroVolteado = (numeroVolteado * 10) + (num % 10);
+      num /= 10;
+    }
+    return numeroVolteado;
+  }
+
+  /**
+   * Voltea un número introducido por teclado.
+   * 
+   * @param num
+   * @return int
+   */
+  public static int voltear(int num) {
+    System.out.println("Esta es la función que devuelve un int.");
+    return (int) (voltear((long) num));
+  }
+
+  /**
+   * @param num
+   * @return boolean
+   */
+  public static boolean esCapicua(long num) {
+    return num == voltear(num);
+  }
+
+  /**
+   * @param num
+   * @return int
+   */
+  public static int siguientePrimo(int num) {
+    while (!esPrimo(++num));  // ! niega el valor de retorno de esPrimo, que es un boolean
+                              // ++num es un preincremento, para que sume 1 a la variable antes de ejecutar la función
+    return num;
+  }
+
 }
