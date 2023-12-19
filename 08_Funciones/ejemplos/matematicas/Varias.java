@@ -49,6 +49,7 @@ public class Varias {
 
   /**
    * Calcula la media de varios números introducidos por teclado.
+   * Pregunta primero si sabes cuántos números vas a introducir.
    * 
    * @param num
    * @return double

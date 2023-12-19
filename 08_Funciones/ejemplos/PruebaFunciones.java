@@ -1,10 +1,10 @@
 import matematicas.Varias;
-import matematicas.Volumen;
+// import matematicas.Volumen;
 
 public class PruebaFunciones {
 
   public static void main(String[] args) {
-    int n;
+    // int n;
 
     // Probamos la funcion esPrimo(), alojada en la clase Varias dentro del paquete
     // matematicas
