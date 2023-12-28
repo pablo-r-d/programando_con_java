@@ -4,7 +4,7 @@
 * @author Pablo Ruiz
 */
 public class T10_Ejercicio_01 {
-
+         
   public static void main(String[] args) {
   
     int[] num = new int[12];

@@ -137,9 +137,55 @@ public class Varias {
    * @return int
    */
   public static int siguientePrimo(int num) {
-    while (!esPrimo(++num));  // ! niega el valor de retorno de esPrimo, que es un boolean
-                              // ++num es un preincremento, para que sume 1 a la variable antes de ejecutar la función
+    while (!esPrimo(++num))
+      ; // ! niega el valor de retorno de esPrimo, que es un boolean
+        // ++num es un preincremento, para que sume 1 a la variable antes de ejecutar la
+        // función
     return num;
+  }
+
+  /**
+   * Devuelve un array de enteros unidimensional ordenado de menor a mayor
+   * 
+   * @param num
+   * @return int
+   */
+  public static int[] menorMayor(int[] num) {
+
+    for (int j = 0; j < (num.length - 1); j++) {
+      for (int i = 0; i < (num.length - 1); i++) {
+        if (num[i] > num[(i + 1)]) {
+          int numero = num[i];
+          num[i] = num[(i + 1)];
+          num[(i + 1)] = numero;
+        }
+      }
+    }
+
+    return num;
+
+  }
+
+  /**
+   * Devuelve un array de enteros unidimensional ordenado de mayor a menor
+   * 
+   * @param num
+   * @return int
+   */
+  public static int[] mayorMenor(int[] num) {
+
+    for (int j = 0; j < (num.length - 1); j++) {
+      for (int i = 0; i < (num.length - 1); i++) {
+        if (num[i] < num[(i + 1)]) {
+          int numero = num[i];
+          num[i] = num[(i + 1)];
+          num[(i + 1)] = numero;
+        }
+      }
+    }
+
+    return num;
+
   }
 
 }
