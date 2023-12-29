@@ -188,4 +188,18 @@ public class Varias {
 
   }
 
+  /**
+   * Devuelve un array de enteros unidimensional invirtiendo el orden
+   * 
+   * @param num
+   * @return int
+   */
+  public static int[] invertArray(int[] num) {
+    int[] num2 = new int[num.length];
+    for (int i = 0; i < num.length; i++) {
+      num2[i] = num[(num.length - 1 - i)];
+    }
+    return num2;
+  }
+
 }
