@@ -11,13 +11,13 @@
     "04_Sentencia_Condicional\\ejemplos",
     "04_Sentencia_Condicional\\ejercicios",
     "03_Lectura_de_datos_desde_teclado\\examen2",
-    "06_Arrays",
-    "06_Arrays\\ejemplos",
-    "06_Arrays\\ejercicios",
     "08_Funciones",
     "08_Funciones\\ejemplos",
     "08_Funciones\\ejercicios",
-    "examen"
+    "examen",
+    "07_Arrays",
+    "07_Arrays\\ejemplos",
+    "07_Arrays\\ejercicios"
   ],
   "java.dependency.syncWithFolderExplorer": true
 }
