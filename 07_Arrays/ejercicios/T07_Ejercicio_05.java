@@ -5,7 +5,7 @@
  * @author Pablo Ruiz
  */
 
-public class T10_Ejercicio_05 {
+public class T07_Ejercicio_05 {
 
   // Ordena el array de menor a mayor
   public static int[] menorMayor(int[] num) {
@@ -43,11 +43,13 @@ public class T10_Ejercicio_05 {
 
   public static void main(String[] args) {
 
-    int[] num = new int[10];
+    int[] num = new int[15];
 
     for (int j = 0; j < num.length; j++) {
       num[j] = (int) (Math.random() * 100);
     }
+
+    num[5] = -8;
 
     menorMayor(num); // Ordena el array de menor a mayor
     for (int i = 0; i < num.length; i++) {

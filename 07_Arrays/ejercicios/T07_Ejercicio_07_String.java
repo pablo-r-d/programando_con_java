@@ -3,7 +3,7 @@
  * 
  * @author Pablo Ruiz
  */
-public class T10_Ejercicio_07_String {
+public class T07_Ejercicio_07_String {
 
   public static void main(String[] args) {
 
