@@ -7,7 +7,7 @@
 
 public class T07_Ejercicio_05 {
 
-  // Ordena el array de menor a mayor
+  // Ordena un array monodimensional de menor a mayor
   public static int[] menorMayor(int[] num) {
 
     for (int j = 0; j < (num.length - 1); j++) {
@@ -24,7 +24,7 @@ public class T07_Ejercicio_05 {
 
   }
 
-  // Ordena el array de mayor a menor
+  // Ordena un array monodimensional de mayor a menor
   public static int[] mayorMenor(int[] num) {
 
     for (int j = 0; j < (num.length - 1); j++) {

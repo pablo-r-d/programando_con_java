@@ -8,16 +8,19 @@
     "02_Variables\\ejercicios",
     "03_Lectura_de_datos_desde_teclado\\ejemplos",
     "03_Lectura_de_datos_desde_teclado\\ejercicios",
+    "03_Lectura_de_datos_desde_teclado\\examen2",
     "04_Sentencia_Condicional\\ejemplos",
     "04_Sentencia_Condicional\\ejercicios",
-    "03_Lectura_de_datos_desde_teclado\\examen2",
+    "06_Numeros_Aleatorios\\ejemplos",
+    "06_Numeros_Aleatorios\\ejercicios",
+    "07_Arrays",
+    "07_Arrays\\ejemplos",
+    "07_Arrays\\ejercicios",
     "08_Funciones",
     "08_Funciones\\ejemplos",
     "08_Funciones\\ejercicios",
-    "examen",
-    "07_Arrays",
-    "07_Arrays\\ejemplos",
-    "07_Arrays\\ejercicios"
+    "09_P_O_O\\ejemplos",
+    "09_P_O_O\\ejercicios"
   ],
   "java.dependency.syncWithFolderExplorer": true
 }
