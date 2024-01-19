@@ -2,7 +2,6 @@ public class Gato {
 
   // Atributos
   String nombre;
-  String color;
   String raza;
   String sexo;
   int edad;
@@ -12,7 +11,6 @@ public class Gato {
   Gato(String nombre) {
     this.nombre = nombre;
   }
-
 
   // Métodos
   void maulla() {
