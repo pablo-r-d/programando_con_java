@@ -1,0 +1,2 @@
+Show Points = n
+Text Speed = 1

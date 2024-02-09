@@ -5,7 +5,7 @@ public class PruebaGato {
     System.out.println("¿Cuántos gatos quieres crear?");
     int numGatos = Integer.parseInt(System.console().readLine());
 
-    Gato[] gaticos = new Gato[numGatos];
+    GatoSergio[] gaticos = new GatoSergio[numGatos];
     String[] nombres = { "Garfield", "Botas", "Willy", "Pancho", "Misifú" };
     String[] colores = { "Marrón", "negro", "Pardo" };
 
@@ -15,13 +15,13 @@ public class PruebaGato {
       String raza = System.console().readLine();
       int nombreAleatorio = (int) (Math.random() * 5);
       int colorAleatorio = (int) (Math.random() * 3);
-      gaticos[i] = new Gato(nombres[nombreAleatorio], colores[colorAleatorio], raza, "Macho", 0, 0); //Falta el constructor en la clase Gato.java
+      gaticos[i] = new GatoSergio(nombres[nombreAleatorio], colores[colorAleatorio], raza, "Macho", 0, 0); //Falta el constructor en la clase Gato.java
     }
 
-    Gato garfield = new Gato("Garfield");
+    GatoSergio garfield = new GatoSergio("Garfield");
     System.out.println(garfield.nombre);
 
-    Gato botas = new Gato(null);
+    GatoSergio botas = new GatoSergio(null);
 
     garfield.come("escado");
     garfield.maulla();

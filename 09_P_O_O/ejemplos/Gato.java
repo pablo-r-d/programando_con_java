@@ -1,42 +1,83 @@
-public class Gato {
+/**
+ * Explica tu código aquí
+ * 
+ * @author Pablo Ruiz
+ */
 
-  // Atributos
-  String nombre;
-  String raza;
-  String sexo;
-  int edad;
-  double peso;
+public class Gato extends Animal {
+  private String raza;
 
-  // Costructores
-  Gato(String nombre) {
-    this.nombre = nombre;
+  public Gato(Sexo s, String r) {
+    super(s);
+    raza = r;
   }
 
-  // Métodos
-  void maulla() {
-    System.out.println("Miaaaaau!");
+  public Gato(Sexo s) {
+    super(s);
+    raza = "siamés";
   }
 
-  void ronronea() {
-    System.out.println("Brrrrrrrr");
+  public Gato(String r) {
+    super(Sexo.HEMBRA);
+    raza = r;
   }
 
-  void come(String comida) {
+  public Gato() {
+    super(Sexo.HEMBRA);
+    raza = "siamés";
+  }
 
-    if (comida.equalsIgnoreCase("pescado")) {
-      System.out.println("Ñam ñam!");
+  public String toString() {
+    return super.toString()
+        + "Raza: " + this.raza
+        + "\n*************************\n";
+  }
+
+  /**
+   * Hace que el gato maulle.
+   */
+  public void maulla() {
+    System.out.println("Miauuuu");
+  }
+
+  /**
+   * Hace que el gato ronronee
+   */
+
+  public void ronronea() {
+    System.out.println("mrrrrrr");
+  }
+
+  /**
+   * Hace que el gato coma.
+   * A los gatos les gusta el pescado, si le damos otra comida
+   * la rechazará.
+   *
+   * @param comida la comida que se le ofrece al gato
+   */
+  public void come(String comida) {
+    if (comida.equals("pescado")) {
+      System.out.println("Hmmmm, gracias");
     } else {
-      System.out.println("Soy un gato y sólo como pescado.");
+      System.out.println("Lo siento, yo solo como pescado");
     }
   }
 
-  void peleaCon(Gato contrincate) {
-
-    if (this.sexo.equalsIgnoreCase(contrincate.sexo) && this.sexo.equalsIgnoreCase("macho")) {
-      System.out.println("Ve aquí que te revieto.");
+  /**
+   * Pone a pelear dos gatos.
+   * Solo se van a pelear dos machos entre sí.
+   *
+   * @param contrincante es el gato contra el que pelear
+   */
+  public void peleaCon(Gato contrincante) {
+    if (this.getSexo() == Sexo.HEMBRA) {
+      System.out.println("no me gusta pelear");
     } else {
-      System.out.println("Mo me gusta pelear.");
+      if (contrincante.getSexo() == Sexo.HEMBRA) {
+        System.out.println("no peleo contra gatitas");
+      } else {
+        System.out.println("ven aquí que te vas a enterar");
+      }
     }
-
   }
 }
