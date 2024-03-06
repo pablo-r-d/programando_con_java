@@ -4,15 +4,15 @@
  * @author Pablo Ruiz Fernando Sanchez
  */
 
-public class Baraja {
+public abstract class Baraja {
 
-  private Carta[][] baraja = new Carta[4][10];
-  private Carta[] barajada = new Carta[40];
+  private static Carta[][] baraja = new Carta[4][10];
+  private static Carta[] barajada = new Carta[40];
 
   // Métodos
   // Creamos 40 cartas en un array bidimensional
   // 4 filas para los palos y 10 columnas para las cartas de cada palo
-  public void iniciarBaraja() {
+  public static void iniciarBaraja() {
     for (int i = 0; i < 4; i++) {
       for (int j = 0; j < 10; j++) {
         baraja[i][j] = new Carta(j + 1, i);
@@ -48,7 +48,7 @@ public class Baraja {
 
   // Recorre el array bidimensional y guarda la carta en una posición aleatoria de un
   // array monodimensional, del cual se irán sacando cartas para jugar
-  public void barajarBaraja() {
+  public static  void barajarBaraja() {
     int num;
 
     for (int i = 0; i < 4; i++) {
@@ -66,6 +66,7 @@ public class Baraja {
       }
     }
   }
+
   // Este método lo utilizamos para comprobar que la baraja barajada fuese correcta
   // No tiene uso en el juego
   public void mostrarBarajada() {
@@ -89,11 +90,11 @@ public class Baraja {
     }
   }
 
-  public Carta sacarCarta(int ronda) {
+  public static Carta sacarCarta(int ronda) {
     return barajada[ronda];
   }
 
-  public void vaciarBaraja() {
+  public static void vaciarBaraja() {
     for (int i = 0; i < barajada.length; i++) {
       barajada[i] = null;
     }

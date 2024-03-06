@@ -5,7 +5,7 @@
  * @author Fernando Sánchez
  */
 
-public class Interfaz {
+public abstract class Interfaz {
   private static boolean mostrarPuntuacion = true;
   private static String respuesta;
   private static int velocidad = 40;

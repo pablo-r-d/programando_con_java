@@ -10,7 +10,7 @@ public class SieteyMedia {
   public static void main(String[] args) {
 
     // Creación de objetos
-    Baraja baraja = new Baraja();
+    // Baraja baraja = new Baraja();
     Jugador jugador = new Jugador();
     Mano manoJugador = new Mano();
     Mano manoBanca = new Mano();
@@ -28,7 +28,7 @@ public class SieteyMedia {
     String plantarse;
 
     // Inicializamos la baraja
-    baraja.iniciarBaraja();
+    Baraja.iniciarBaraja();
 
     // Menú principal
     do {
@@ -87,8 +87,8 @@ public class SieteyMedia {
           // Aquí empieza el juego
           while (jugador.getMonedero() > 0 && !salir) {
 
-            baraja.vaciarBaraja();
-            baraja.barajarBaraja();
+            Baraja.vaciarBaraja();
+            Baraja.barajarBaraja();
             indiceBarajada = 0;
             do {
               try {
@@ -112,13 +112,13 @@ public class SieteyMedia {
             // Aqui empieza el turno del jugador
             while (manoJugador.getPuntuacion() < 7.5 && !finRonda) {
 
-              manoJugador.meterCarta(indiceBarajada, baraja.sacarCarta(indiceBarajada)); // se le da una carta al
+              manoJugador.meterCarta(indiceBarajada, Baraja.sacarCarta(indiceBarajada)); // se le da una carta al
                                                                                          // jugador
 
               System.out.println("Turno de: " + nombre);
               System.out.println("----------------------");
               manoJugador.mostrarMano();
-              manoJugador.puntuacion(baraja.sacarCarta(indiceBarajada));
+              manoJugador.puntuacion(Baraja.sacarCarta(indiceBarajada));
               if (Interfaz.isMostrarPuntuacion()) {
                 Interfaz.escribirDeFormaLenta("Puntuación: " + manoJugador.getPuntuacion() + "\n");
               }
@@ -154,9 +154,9 @@ public class SieteyMedia {
                                                                                      // jugando
                     System.out.println("turno de: La banca");
                     System.out.println("----------------------");
-                    manoBanca.meterCarta(indiceBarajada, baraja.sacarCarta(indiceBarajada));
+                    manoBanca.meterCarta(indiceBarajada, Baraja.sacarCarta(indiceBarajada));
                     manoBanca.mostrarMano();
-                    manoBanca.puntuacion(baraja.sacarCarta(indiceBarajada));
+                    manoBanca.puntuacion(Baraja.sacarCarta(indiceBarajada));
                     if (Interfaz.isMostrarPuntuacion()) {
                       Interfaz.escribirDeFormaLenta("Puntuación: " + manoBanca.getPuntuacion() + "\n");
                     }
