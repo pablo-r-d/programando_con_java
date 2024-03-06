@@ -1,9 +1,9 @@
 public class Interfaz {
-  private boolean mostrarPuntuacion = true;
-  private String respuesta;
+  private static boolean mostrarPuntuacion = true;
+  private static String respuesta;
   //////////////// Metodos
 
-  public void menuInicio() {
+  public static void menuInicio() {
     System.out.println("***********************************");
     System.out.println("*  Bienvendio al juego 7 y media  *");
     System.out.println("***********************************");
@@ -15,11 +15,11 @@ public class Interfaz {
     System.out.println("***********************************");
   }
 
-  public boolean isMostrarPuntuacion() {
+  public static boolean isMostrarPuntuacion() {
     return mostrarPuntuacion;
   }
 
-  public void instrucciones() {
+  public static void instrucciones() {
     System.out.println("***************************************************************************");
     System.out.println("* SIETE Y MEDIA es un juego de cartas donde el objetivo principal es      *");
     System.out.println("* acercarse lo más posible a la puntuación de 7,5.                        *");
@@ -36,19 +36,19 @@ public class Interfaz {
 
   }
 
-  public void clearScreen() {
+  public static void clearScreen() {
     System.out.print("\033[H\033[2J");
     System.out.flush();
   }
 
-  public void creditos() {
+  public static void creditos() {
     System.out.println("*************************************************");
     System.out.println("* Juego hecho por Fernando Sanchez y Pablo Ruiz *");
     System.out.println("*            gracias por jugar :)               *");
     System.out.println("*************************************************");
   }
 
-  public void opciones() {
+  public static void opciones() {
     do {
       System.out.println(" ¿Mostrar puntuacion de las manos? (s/n)");
       respuesta = System.console().readLine();

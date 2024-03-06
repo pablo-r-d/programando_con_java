@@ -12,15 +12,13 @@ public class Quiniela_Evaluable {
 
     int apuestaAux = 0;
     String apuestaTabla = "";
-    String[] resultado = new String[15];
-    String[][] apuestas = new String[15][4];
+    String[] resultado = new String[16];
+    String[][] apuestas = new String[15][3];
     int[] aciertos = new int[3];
-    // int[] fallos = new int[3];
-    // int[] total = new int[3];
 
     for (int i = 0; i < (apuestas.length - 1); i++) {
       System.out.printf("%2d. |", (i + 1));
-      for (int j = 0; j < (apuestas[i].length - 1); j++) {
+      for (int j = 0; j < (apuestas[i].length); j++) {
         apuestaAux = (int) (Math.random() * 3) + 1;
 
         switch (apuestaAux) {
@@ -61,25 +59,27 @@ public class Quiniela_Evaluable {
         default:
           break;
       }
-      System.out.println("  " + resultado[i]);
+      System.out.println();
+      // System.out.println(resultado[i]);
     }
 
     System.out.println("------------------");
+    System.out.print("15. |");
 
-    for (int i = 0; i <= 2; i++) {
+    for (int i = 0; i <= 1; i++) {
 
       apuestaAux = (int) (Math.random() * 4) + 1;
       switch (apuestaAux) {
         case 1:
-          apuestaTabla = "1  ";
+          apuestaTabla = "0";
           break;
 
         case 2:
-          apuestaTabla = " X ";
+          apuestaTabla = "1";
           break;
 
         case 3:
-          apuestaTabla = "  2";
+          apuestaTabla = "2";
           break;
 
         case 4:
@@ -89,7 +89,32 @@ public class Quiniela_Evaluable {
         default:
           break;
       }
+      apuestas[14][i] = apuestaTabla;
+
+      apuestaAux = (int) (Math.random() * 4) + 1;
+      switch (apuestaAux) {
+        case 1:
+          resultado[14 + i] = "0";
+          break;
+
+        case 2:
+          resultado[14 + i] = "1";
+          break;
+
+        case 3:
+          resultado[14 + i] = "2";
+          break;
+
+        case 4:
+          resultado[14 + i] = "M";
+          break;
+
+        default:
+          break;
+      }
     }
+
+    System.out.printf(" Local %s Visitante %s", apuestas[14][0], apuestas[14][1]);
 
     System.out.println();
 
@@ -97,19 +122,16 @@ public class Quiniela_Evaluable {
       for (int j = 0; j < (apuestas.length - 1); j++) {
         if (resultado[j].equalsIgnoreCase(apuestas[j][i])) {
           aciertos[i] += 1;
-        } // else {
-        // fallos[i] += 1;
-        // }
+        }
       }
     }
 
-    // for (int i = 0; i < total.length; i++) {
-    // total[i] = aciertos[i] - fallos[i];
-    // }
-    System.out.print("    ");
+    System.out.println();
+
     for (int i = 0; i < aciertos.length; i++) {
-      System.out.print(aciertos[i] + " ");
+      System.out.println("Aciertos columna " + (i + 1) + ": " + aciertos[i]);
     }
+    System.out.println("Resultado pleno: " + "Local " + resultado[14] + " Visitante " + resultado[15]);
     System.out.println();
     for (int i = 0; i < aciertos.length; i++) {
       if (aciertos[i] >= 10) {
@@ -117,7 +139,10 @@ public class Quiniela_Evaluable {
       }
     }
 
-    // System.out.print("15. | Local " + " Visitante ");
+    if ((apuestas[14][0] == resultado[14]) && apuestas[14][1] == resultado[15]) {
+      System.out.println("Enhorabuena, pleno acertado");
+    }
+
   }
 
 }

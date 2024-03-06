@@ -150,7 +150,7 @@ public class SieteyMedia {
 
                 // Aqui empieza el turno de la banca
                 if (plantarse.equalsIgnoreCase("s")) {
-                  while (manoBanca.getPuntuacion() <= manoJugador.getPuntuacion()) { // bucle para que la banca siga
+                  while (manoBanca.getPuntuacion() <= manoJugador.getPuntuacion()) { // bucle para que la banca siga//
                                                                                      // jugando
                     System.out.println("turno de: La banca");
                     System.out.println("----------------------");
@@ -204,7 +204,8 @@ public class SieteyMedia {
               finRonda = true;
             } else {
               do {
-                Interfaz.escribirDeFormaLenta("¿Quiere continuar jugando? (s/n)\n"); // Preguntar al jugador si quiere seguir jugando
+                Interfaz.escribirDeFormaLenta("¿Quiere continuar jugando? (s/n)\n"); // Preguntar al jugador si quiere
+                                                                                     // seguir jugando
                 string = (System.console().readLine());
                 if (string.equalsIgnoreCase("n")) {
                   salir = true;

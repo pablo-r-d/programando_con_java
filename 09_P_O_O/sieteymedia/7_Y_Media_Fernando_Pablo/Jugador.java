@@ -12,11 +12,11 @@ public class Jugador {
   // Método realizar apuesta
   public int apuesta() {
     do { // Bucle para asegurar que la cantidad es correcta
-      Interfaz.escribirDeFormaLenta("¿Cuánto dinero quiere apostar? ");
+      Interfaz.escribirDeFormaLenta("¿Cuánto dinero quieres apostar? ");
       System.out.print(" $");
       apuesta = Integer.parseInt(System.console().readLine());
       if (apuesta > monedero) {
-        System.out.println("No puede apostar más de $" + monedero);
+        System.out.println("No puedes apostar más de $" + monedero);
       } else if (apuesta < 1) {
         System.out.println("La apuesta minima es 1");
       }
